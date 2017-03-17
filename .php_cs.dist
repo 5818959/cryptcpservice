@@ -1,0 +1,15 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->exclude('vendor')
+    ->exclude('spec')
+    ->in(__DIR__)
+;
+
+return PhpCsFixer\Config::create()
+	->setRules(array(
+		'@PSR2' => true,
+		'concat_space' => false,
+	))
+    ->setFinder($finder)
+;
