@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="PHP_CodeSniffer">
+    <file>./</file>
+    
+    <exclude-pattern>vendor/</exclude-pattern>
+    <exclude-pattern>spec/</exclude-pattern>
+
+    <rule ref="PSR2"/>
+    <arg name="extensions" value="php,php.dist"/>
+
+    <arg name="encoding" value="utf-8"/>
+    <arg name="report" value="summary"/>
+    <arg name="colors"/>
+    <arg value="p"/>
+</ruleset>

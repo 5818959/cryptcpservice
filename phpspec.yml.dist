@@ -1,0 +1,4 @@
+suites:
+    cryptcpservice_suite:
+        namespace: CryptCPService
+        psr4_prefix: CryptCPService
