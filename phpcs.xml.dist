@@ -6,8 +6,14 @@
     <exclude-pattern>spec/</exclude-pattern>
 
     <rule ref="PSR2"/>
-    <arg name="extensions" value="php,php.dist"/>
 
+    <rule ref="Squiz.Commenting.FunctionComment" />
+    <rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
+    <rule ref="Squiz.Commenting.ClassComment" />
+    <!-- <rule ref="Squiz.Commenting.FileComment" /> -->
+    <rule ref="Squiz.Commenting.VariableComment" />
+
+    <arg name="extensions" value="php,php.dist"/>
     <arg name="encoding" value="utf-8"/>
     <arg name="report" value="summary"/>
     <arg name="colors"/>
