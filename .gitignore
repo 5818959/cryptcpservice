@@ -1,2 +1,8 @@
 # vendor
 /vendor/*
+
+# config
+/app/config.php
+
+# tmp folder
+/tmp/*
