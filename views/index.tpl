@@ -11,13 +11,18 @@
     <form action="" method="post">
       
       <div class="row">
-        <label for="certificate">Сертификат</label><br>
-        <textarea name="certificate" id="certificate" cols="80" rows="10"></textarea>
+        <label for="data">Данные</label><br>
+        <textarea name="data" id="data" cols="80" rows="8"></textarea>
       </div>
 
       <div class="row">
-        <label for="data">Подписанные данные</label><br>
-        <textarea name="data" id="data" cols="80" rows="10"></textarea>
+        <label for="certificate">Сертификат</label><br>
+        <textarea name="certificate" id="certificate" cols="80" rows="8"></textarea>
+      </div>
+
+      <div class="row">
+        <label for="signature">Подписанные данные</label><br>
+        <textarea name="signature" id="signature" cols="80" rows="8"></textarea>
       </div>
 
       <div class="row"><br></div>
