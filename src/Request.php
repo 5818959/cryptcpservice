@@ -65,7 +65,7 @@ class Request
     /**
      * Handle request data.
      *
-     * @param  array $request Request data.
+     * @param array $request Request data
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class Request
     /**
      * Adds message to last validation errors.
      *
-     * @param  string $errorMessage Error message.
+     * @param string $errorMessage Error message
      *
      * @return self
      */
