@@ -4,9 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "435fa1c1754c859fc6a8f044995e870d",
-    "content-hash": "539e2e5c25c51ef7f8fe0adbbdd3bd1a",
-    "packages": [],
+    "hash": "4a36f4472b9c6e02adb88cf6fadf1f2f",
+    "content-hash": "ea7c4b51efac9763578fbeb2fd1bf40e",
+    "packages": [
+        {
+            "name": "5818959/tempfileservice",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/5818959/tempfileservice.git",
+                "reference": "72da3fd691ebaba0e2e975e00976754d5bb9eda3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/5818959/tempfileservice/zipball/72da3fd691ebaba0e2e975e00976754d5bb9eda3",
+                "reference": "72da3fd691ebaba0e2e975e00976754d5bb9eda3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.1",
+                "phpmd/phpmd": "^2.6",
+                "phpspec/phpspec": "^3.2",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^2.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TempFileService\\": "src/"
+                }
+            },
+            "description": "Handle with temp files",
+            "support": {
+                "source": "https://github.com/5818959/tempfileservice/tree/master",
+                "issues": "https://github.com/5818959/tempfileservice/issues"
+            },
+            "time": "2017-03-31 12:34:04"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
