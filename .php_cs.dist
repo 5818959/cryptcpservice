@@ -7,6 +7,7 @@ $finder = PhpCsFixer\Finder::create()
 ;
 
 return PhpCsFixer\Config::create()
+    ->setUsingCache(false)
     ->setRules(array(
         '@Symfony' => true,
         'concat_space' => false,
