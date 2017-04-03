@@ -5,6 +5,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/5818959/tempfileservice"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/5818959/fakecryptcp"
         }
     ],
     "require": {
@@ -16,7 +20,8 @@
         "squizlabs/php_codesniffer": "^2.8",
         "phpmd/phpmd": "^2.6",
         "friendsofphp/php-cs-fixer": "^2.1",
-        "sebastian/phpcpd": "^3.0"
+        "sebastian/phpcpd": "^3.0",
+        "5818959/fakecryptcp": "^0.0.1"
     },
     "autoload": {
         "psr-4": {

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4a36f4472b9c6e02adb88cf6fadf1f2f",
-    "content-hash": "ea7c4b51efac9763578fbeb2fd1bf40e",
+    "hash": "c20b80ff75bfc406a016f14e705927c9",
+    "content-hash": "ec57bd992abb0ba71157770f9fb1eb38",
     "packages": [
         {
             "name": "5818959/tempfileservice",
@@ -46,6 +46,33 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "5818959/fakecryptcp",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/5818959/fakecryptcp.git",
+                "reference": "ed617678b50055c276712bb1fca9f0d4d3672181"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/5818959/fakecryptcp/zipball/ed617678b50055c276712bb1fca9f0d4d3672181",
+                "reference": "ed617678b50055c276712bb1fca9f0d4d3672181",
+                "shasum": ""
+            },
+            "bin": [
+                "fake-cryptcp",
+                "fake-cryptcp-success",
+                "fake-cryptcp-unsuccess"
+            ],
+            "type": "library",
+            "description": "Simplest cryptcp utility emulator (Linux/OSX).",
+            "support": {
+                "source": "https://github.com/5818959/fakecryptcp/tree/0.0.1",
+                "issues": "https://github.com/5818959/fakecryptcp/issues"
+            },
+            "time": "2017-04-03 14:42:09"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
