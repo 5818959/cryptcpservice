@@ -1,4 +1,3 @@
 <?php
 
 define('CRYPTCP_PATH', 'c:\www\cryptcp\cryptcp.exe');
-define('TMP_FOLDER', __DIR__ . '/tmp');

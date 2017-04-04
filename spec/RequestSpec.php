@@ -13,7 +13,7 @@ class RequestSpec extends ObjectBehavior
         $this->shouldHaveType(Request::class);
     }
 
-    function it_can_handle_data_verify_request($request)
+    function it_can_handle_attached_signature_verify_request($request)
     {
         $exampleRequest = array(
             'data' => 'test phrase',
@@ -36,7 +36,7 @@ class RequestSpec extends ObjectBehavior
         $this->getOptions()->shouldBeArray();
     }
 
-    function it_can_handle_hash_verify_request($request)
+    function it_can_handle_detached_signature_verify_request($request)
     {
         $exampleRequest = array(
             'data' => 'test phrase',
@@ -74,11 +74,11 @@ class RequestSpec extends ObjectBehavior
         $this->validate()->shouldReturn(true);
     }
 
-    function it_should_fail_while_validete_bad_request()
+    function it_should_fail_while_validate_bad_request()
     {
         $badRequest = array(
             'data' => '',
-            'type' => 10,
+            'type' => -1,
         );
 
         $this->handle($badRequest);
