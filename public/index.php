@@ -8,18 +8,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $request->handle($_POST);
 
     if ($request->validate()) {
-        echo '<pre>';
+        try {
+            $service = new \CryptCPService\Service(CRYPTCP_PATH);
+            $verifyResult = $service->verify($request);
+        } catch (\Exception $e) {
+            $errorMessage = $e->getMessage();
 
-        echo 'Valid request' . PHP_EOL;
-        $service = new \CryptCPService\Service(CRYPTCP_PATH);
-        $result = $service->verify($request);
+            include __DIR__ . '/../views/error.tpl';
+            exit;
+        }
+        $verifyDetails = implode(PHP_EOL, $service->getLastOutput());
 
-        echo 'Request result: ' . ($result === true ? 'success' : 'fail') . PHP_EOL;
-        echo PHP_EOL . 'Details: ' . PHP_EOL;
-        var_dump($service->getLastOutput());
-
-        echo '</pre>';
-        // include __DIR__ . '/../views/result.tpl';
+        include __DIR__ . '/../views/result.tpl';
     } else {
         header('HTTP/1.0 400 Bad Request');
     }
